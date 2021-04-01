@@ -1,0 +1,44 @@
+.pcont {
+
+  display: flex;
+  align-items: center;
+  min-height: 90vh;
+  /* border: 1px solid yellow; */
+
+}
+
+form {
+
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.container {
+
+  /* border: 1px solid red; */
+  display: flex;
+  flex: 1;
+  justify-content: center;
+
+}
+
+button {
+
+  color: white;
+  background-color: blue;
+  border: none;
+  padding:5px 0px 5px 0px;
+  border-radius: 5px;
+
+}
+
+.child1 {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
