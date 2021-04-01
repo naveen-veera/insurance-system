@@ -21,9 +21,10 @@ export class AppComponent {
   }
 
   onSubmit(postData) {
-    // console.log(postData);
+    
     var amount = this.insurancequoteService.generate(postData);
-    this.totalAmount = "The total Amount is " + amount;
+    this.totalAmount = "The Insurance Quotation is " + amount;
+    
   }
 
 }

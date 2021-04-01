@@ -1,4 +1,4 @@
-# Angq10
+# Insurance Quotation - Angular - Services
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
 
@@ -16,12 +16,17 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Project Summary
 
-## Running end-to-end tests
+It is a example project for understanding the Angular services. I have just implemented the services to calculate the Insurance Quotation.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Generate Insurance Quote for a qiven customer based on following condition
+- Base Price - 1000 Rs
+- Additional premium 10% if age is > 30, 20% if age is > 40, and 45% if age is > 55.
+- Additional premium 25% if Smoking & Drinks, 0% for Tee Toddler.
+- Additional premium 5% if user lives in Urban area, and 10% if user lives in Rural area.
+- Additional premium 10% if user lives near western international border.
+- Additional premium 20% if Diabetic.
+- And 18% GST on Final Cost.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The input to the service is Customer objects that has above attributes using which the function/service should calculate the Insurance Quotation.

@@ -5,13 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class InsurancequoteService {
 
-  bp:number = 1000;
-  age:number;
-  behaviour:string;
-  livingArea:string;
-  living:string;
-  diabetic:string;
-  addGst: any;
   totalIQA: any;
 
   constructor() { }
@@ -74,7 +67,7 @@ export class InsurancequoteService {
     this.totalIQA = totalAmount;
 
     return this.totalIQA;
-    
+
     // console.log("Service working Successfully");
     // console.log(postData);
   }
