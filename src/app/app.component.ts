@@ -15,6 +15,7 @@ export class AppComponent {
   diabetic : any;
 
   totalAmount : any;
+  amount : number;
 
   constructor(private insurancequoteService:InsurancequoteService) {
 
@@ -22,8 +23,8 @@ export class AppComponent {
 
   onSubmit(postData) {
     
-    var amount = this.insurancequoteService.generate(postData);
-    this.totalAmount = "The Insurance Quotation is " + amount;
+    this.amount = this.insurancequoteService.generate(postData);
+    this.totalAmount = "The Insurance Quotation is " + this.amount;
     
   }
 

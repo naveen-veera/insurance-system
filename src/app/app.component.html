@@ -1,78 +1,45 @@
 <div class="pcont">
   <div class="container">
-    <div class="child1">     
+    <div class="child1">
       <form #postForm="ngForm" (ngSubmit)="onSubmit(postForm.value)">
 
         <h1 style="position:relative;left: 23px;">Insurance Quotation</h1>
 
-        <input 
-          type="text" 
-          name="customerAge" 
-          id="cusage"
-          style="margin-top: 10px;"
-          [(ngModel)] = "customerAge"
-        >
-        
-        <select 
-          id="bh" 
-          name="behaviour"
-          style="margin-top: 15px;"
-          [(ngModel)] = "behaviour"
-        >
+        <input class="form-control" type="text" name="customerAge" id="cusage" style="margin-top: 10px;"
+          [(ngModel)]="customerAge" placeholder="Enter age">
+
+        <select id="bh" class="form-control" name="behaviour" style="margin-top: 15px;" [(ngModel)]="behaviour">
           <option value="Smoking & Drinks">Smoking & Drinks</option>
           <option value="Tee Toddler">Tee Toddler</option>
         </select>
 
-        <select 
-          id="la" 
-          name="livingArea"
-          style="margin-top: 15px;"
-          [(ngModel)] = "livingArea"
-        >
+        <select id="la" class="form-control" name="livingArea" style="margin-top: 15px;" [(ngModel)]="livingArea">
           <option value="urban">Urban</option>
           <option value="rural">Rural</option>
         </select>
 
-        <label 
-          for="liv"
-          style="margin-top: 15px;"
-        >
+        <label for="liv" style="margin-top: 15px;">
           Are you Living near Western International Border?
         </label>
-        <select 
-          id="liv" 
-          name="living"
-          style="margin-top: 5px;"
-          [(ngModel)] = "living"
-        >
+        <select class="form-control" id="liv" name="living" style="margin-top: 5px;" [(ngModel)]="living">
           <option value="yes">Yes</option>
           <option value="no">No</option>
         </select>
 
-        <label 
-          for="diab"
-          style="margin-top: 15px;"
-        >
+        <label for="diab" style="margin-top: 15px;">
           Are you Diabetic?
         </label>
-        <select 
-          id="diab" 
-          name="diabetic"
-          style="margin-top: 5px;"
-          [(ngModel)] = "diabetic"
-        >
+        <select id="diab" class="form-control" name="diabetic" style="margin-top: 5px;" [(ngModel)]="diabetic">
           <option value="yes">Yes</option>
           <option value="no">No</option>
         </select>
 
-        <button
-          style="margin-top: 20px;margin-bottom: 20px;"
-        >
+        <button id="submitButton" class="btn btn-secondary" style="margin-top: 20px;margin-bottom: 20px;">
           submit
         </button>
-      </form>    
+      </form>
 
-      <p>{{totalAmount}}</p>
+      <p id="result" *ngIf="totalAmount">{{totalAmount}}</p>
     </div>
   </div>
 </div>
